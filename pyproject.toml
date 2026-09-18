@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "marketbrain"
+version = "0.1.0"
+description = "Market-level, longitudinal, leakage-free feature corpus for outlier-market prediction (Vela Research)."
+requires-python = ">=3.10"
+license = { text = "MIT" }
+readme = "README.md"
+authors = [{ name = "Jude Popham" }]
+dependencies = [
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "pyarrow>=14.0.0",   # parquet engine for the corpus store
+]
+
+[project.optional-dependencies]
+# v1 signal ingestion (next PR): natively-dated APIs + web-archive captures.
+signals = ["requests>=2.31.0"]
+viz = ["matplotlib>=3.7.0"]
+dev = ["pytest>=7.4.0", "ruff>=0.1.0"]
+# success-LABEL construction (separate from the deterministic feature corpus): BigQuery base +
+# Gemini web-grounding. Heavier/optional; the label modules import these lazily.
+labels = ["google-cloud-bigquery>=3.0.0", "google-genai>=1.0.0"]
+
+[tool.setuptools]
+packages = [
+    "marketbrain",
+    "marketbrain.schema",
+    "marketbrain.validation",
+    "marketbrain.corpus",
+    "marketbrain.signals",
+    "marketbrain.markets",
+    "marketbrain.features",
+    "marketbrain.figures",
+    "marketbrain.labels",
+    "experiments",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

@@ -1,0 +1,50 @@
+{
+  "h1": {
+    "SIG": 0.556,
+    "SIG+AUTH": 0.58,
+    "AUTH_only": 0.232,
+    "delta": 0.025,
+    "ci": [
+      -0.21,
+      0.207
+    ],
+    "p": 0.442,
+    "SIG+auth_prior_papers": 0.481,
+    "SIG+auth_newcomer_ratio": 0.523,
+    "SIG+auth_star": 0.566,
+    "SIG+auth_prior_hit": 0.556,
+    "SIG+AUTH+CIT": 0.504,
+    "cit_delta": -0.076,
+    "cit_ci": [
+      -0.142,
+      0.003
+    ],
+    "cit_p": 0.965,
+    "BASE+auth_cit_max": 0.543,
+    "BASE+auth_cit_med": 0.563
+  },
+  "h9": {
+    "SIG": 0.524,
+    "SIG+AUTH": 0.72,
+    "AUTH_only": 0.287,
+    "delta": 0.196,
+    "ci": [
+      0.019,
+      0.328
+    ],
+    "p": 0.015,
+    "SIG+auth_prior_papers": 0.66,
+    "SIG+auth_newcomer_ratio": 0.556,
+    "SIG+auth_star": 0.551,
+    "SIG+auth_prior_hit": 0.528,
+    "SIG+AUTH+CIT": 0.722,
+    "cit_delta": 0.002,
+    "cit_ci": [
+      -0.121,
+      0.107
+    ],
+    "cit_p": 0.494,
+    "BASE+auth_cit_max": 0.711,
+    "BASE+auth_cit_med": 0.733
+  }
+}

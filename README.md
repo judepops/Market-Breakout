@@ -1,6 +1,6 @@
 # halflife-research
 
-## How it's used at Vela
+### How it's used for investment decisions at Vela Partners
 
 Halflife research matured at vela and became Market Breakout. The tool is accessible at: https://breakout.vela.partners/
 

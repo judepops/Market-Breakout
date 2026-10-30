@@ -1,5 +1,9 @@
 # halflife-research
 
+## How it's used at Vela
+
+Halflife research matured at vela and became Market Breakout. The tool is accessible at: https://breakout.vela.partners/
+
 **Most research ideas decay. Some compound. This tells you which, early, and who is behind them.**
 
 Built during my research internship at Vela Partners (2026). Vela now runs an extended version of
@@ -105,45 +109,3 @@ Raw data isn't included. arXiv, bioRxiv and OpenAlex are public and the fetchers
 `experiments/`. Crunchbase and other licensed sources are not redistributable.
 
 ---
-
-## How it's used at Vela
-
-Vela took the detector in house and built it into a product (Yigit Ihlamur led the production
-pipeline). **It now runs monthly as Vela's research-trends product**, with a startup and funding
-layer and a chat interface over 7,297 ideas.
-
-![Research Trends, Vela's monthly product](docs/images/app_research_trends.png)
-
-What the in-house version added:
-
-- **LLM concept themes.** Gemini reads every cs.AI paper and names its ideas, replacing keyword
-  themes (AUPRC 0.40 to 0.52).
-- **Author-quality features.** Team experience, star authors, and authors with a track record on
-  earlier durable ideas (AUPRC **0.72 at nine months against a 9% base rate**).
-- **A live radar.** Trajectory states, a confidence estimate from one month after an idea appears,
-  and a "newborn" stage that scores ideas before they break out.
-- **From ideas to people.** For each durable idea: the researchers driving it, their key papers,
-  and whether they have founded a startup.
-
-<p align="center">
-  <img src="docs/images/app_rising_now.png" width="49%" alt="Rising-now list: calls, rank bands, trend and trajectory">
-  <img src="docs/images/app_chat.png" width="49%" alt="Chat: top 5 durable ideas rising right now">
-</p>
-
-**The ratings rank correctly.** Of the ideas rated top tier at nine months, 47% went on to last,
-and the share falls with every tier below:
-
-| Tier at 9 months | L5 (top) | L4 | L3 | L2 | L1 |
-| --- | --- | --- | --- | --- | --- |
-| **Went on to last** | **47%** | 17% | 3% | 0% | 0% |
-
-![Track record by tier, and detector quality by months since an idea appeared](docs/images/app_track_record.png)
-
-Vela is integrating it into **Vela OS** as a monthly API: scan arXiv and similar sources, surface
-durable trends and the people behind them, and track which of those people go on to found
-companies. The same fad-vs-durable framing is planned for GitHub, marketplaces and other traction
-data.
-
-*In-house numbers come from Vela's pipeline. The 0.72 figure and the tier track record were measured
-before a leaky feature (venue) was removed; the leak-free production model beats momentum by
-+13 points.*

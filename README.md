@@ -15,7 +15,7 @@ it in house as a monthly research-trends product.
 
 ### How it's used for investment decisions at Vela Partners
 
-Halflife research matured at Vela and became "Market Breakout". The tool is accessible at: https://breakout.vela.partners/
+Halflife research matured at Vela and became **Vela Breakout**. The tool is accessible at: https://breakout.vela.partners/
 
 ---
 

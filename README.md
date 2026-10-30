@@ -1,9 +1,5 @@
 # halflife-research
 
-### How it's used for investment decisions at Vela Partners
-
-Halflife research matured at vela and became Market Breakout. The tool is accessible at: https://breakout.vela.partners/
-
 **Most research ideas decay. Some compound. This tells you which, early, and who is behind them.**
 
 Built during my research internship at Vela Partners (2026). Vela now runs an extended version of
@@ -16,6 +12,10 @@ it in house as a monthly research-trends product.
 | **+0.16, p = 0.002** | transfers unchanged to biology (263k bioRxiv preprints) |
 | **Momentum subsumed** | adding momentum to the model adds nothing |
 | **0 look-ahead** | every datum carries the date it became public; a leakage test gates every build |
+
+### How it's used for investment decisions at Vela Partners
+
+Halflife research matured at Vela and became "Market Breakout". The tool is accessible at: https://breakout.vela.partners/
 
 ---
 
